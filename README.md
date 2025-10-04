@@ -1,6 +1,11 @@
 # DL-Workshop-1
 
 ## Binary Classification with Neural Networks on the Census Income Dataset
+## DATE : 04-10-2025
+## NAME : TAMIZHSELVAN B
+## REG.No : 212223230225
+## AIM :
+To build and train a binary classification model using PyTorch on the Census Income dataset to predict whether an individual earns more than $50,000 annually based on categorical and continuous features.
 
 ## ALGORITHMS:
 ### Step 1 : 
@@ -190,17 +195,25 @@ for i in range(epochs):
 print(f'epoch: {i:3} loss: {loss.item():10.8f}') # print the last line
 print(f'\nDuration: {time.time() - start_time:.0f} seconds') # print the time elapsed
 
+print('Name : TAMIZHSELVAN B')
+print('Reg.No : 212223230225')
+
+
 plt.plot([loss.item() for loss in losses])
 plt.xlabel("Epoch")
 plt.ylabel("Cross Entropy Loss")
 plt.title("Training Loss")
 plt.show()
+print('Name : TAMIZHSELVAN B')
+print('Reg.No : 212223230225')
 
 
 with torch.no_grad():
   y_val = model(cat_test, con_test)
   loss = criterion(y_val, y_test)
 print(f'CE Loss: {loss:.8f}')
+print('Name : TAMIZHSELVAN B')
+print('Reg.No : 212223230225')
 
 
 correct = 0
@@ -209,6 +222,8 @@ for i in range(len(y_test)):
     correct += 1
 accuracy = correct / len(y_test) * 100
 print(f'{correct} out of {len(y_test)} = {accuracy:.2f}% correct')
+print('Name : TAMIZHSELVAN B')
+print('Reg.No : 212223230225')
 
 
 ```
@@ -236,19 +251,25 @@ print(f'{correct} out of {len(y_test)} = {accuracy:.2f}% correct')
 
 ### Loss :
 
-<img width="400" height="463" alt="image" src="https://github.com/user-attachments/assets/0326daf1-5bf7-41e5-bbce-3447e84f4bb8" />
+<img width="410" height="386" alt="image" src="https://github.com/user-attachments/assets/cad7e6eb-f60e-44ca-b9ea-ef02c82d7148" />
+
 
 ### Entropy Loss Vs Training Loss :
 
-<img width="862" height="687" alt="image" src="https://github.com/user-attachments/assets/9d8c9910-e3d7-435d-b9a0-e7af8b309c97" />
+
+<img width="807" height="626" alt="image" src="https://github.com/user-attachments/assets/284dd4b8-7f5b-4875-b7a2-1fef8a19f404" />
+
 
 ### CE Loss :
 
-<img width="515" height="70" alt="image" src="https://github.com/user-attachments/assets/7876a2fd-05eb-4eb5-a082-b1f955ad8821" />
+
+<img width="350" height="81" alt="image" src="https://github.com/user-attachments/assets/dc1d6442-e4a4-48dd-b30b-19c780c5f70a" />
+
 
 ### Accuracy :
 
-<img width="517" height="67" alt="image" src="https://github.com/user-attachments/assets/2f358947-ac3b-481a-ac52-ed50aac541cc" />
+
+<img width="526" height="88" alt="image" src="https://github.com/user-attachments/assets/011b9cc1-dac2-4524-8f85-32e1d8d03210" />
 
 
 ## RESULT :
